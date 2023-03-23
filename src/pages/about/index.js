@@ -4,7 +4,7 @@ import "../../styles/global.css"
 
 const About = () => {
   return (
-      <div className="About">
+      <div className="About" id="About">
         <div className="about-me">
           <h1>sobre mim</h1>
           <p> Olá, meu nome é Vinicius e sou desenvolvedor web front end há 1 ano. Tenho experiência em HTML, CSS, JavaScript e a biblioteca React, utilizo o Styled-Components e também em ferramentas de controle de versão, como o Git.

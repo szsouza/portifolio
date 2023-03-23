@@ -16,20 +16,21 @@ nav {
   line-height: 80px;
   position: fixed;
   overflow: hidden;
+  background-color: #f3f5f8e6;
 }
 
 .logo {
   display: flex;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   color: #3d535f;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
 b {
-  font-size: 80px;
+  font-size: 70px;
   color: #7f00ff;
 }
 
@@ -43,9 +44,9 @@ b {
 }
 
 .navItems li a {
-  font-size: 25px;
+  font-size: 20px;
   color: #3d535f;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.4s;
@@ -56,7 +57,7 @@ b {
 }
 
 .links a {
-  font-size: 30px;
+  font-size: 25px;
   color: #3d535f;
   margin: 25px 10px;
   transition: 0.4s;

@@ -1,0 +1,46 @@
+.contact {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+form {
+  display: flex;
+  font-size: 25px;
+  flex-direction: column;
+  width: 80%;
+}
+form label {
+  display: flex;
+  align-items: flex-start;
+}
+
+form input[type=text], input[type=email], textarea {
+  padding: 0.6rem;
+  margin-bottom: 1.4rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+}
+
+form button {
+  padding: 0.7rem 0.5rem;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+

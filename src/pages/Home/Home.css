@@ -59,14 +59,14 @@
   letter-spacing: 5px;
   color: #3d535f;
 }
-.topline::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 45px;
-  bottom: 10px;
-  background-color: #7f00ff;
-}
+  /* .topline::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+  } */
 
 h1 {
   display: block;
@@ -78,6 +78,7 @@ h1 {
 .multitext {
   color: #7f00ff;
   text-transform: capitalize;
+  font-size: 12px;
 }
 
 p {
