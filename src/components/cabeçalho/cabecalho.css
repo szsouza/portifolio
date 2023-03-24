@@ -31,7 +31,7 @@ nav {
 
 b {
   font-size: 70px;
-  color: #7f00ff;
+  color: #00d9ff;
 }
 
 .navItems {
@@ -53,7 +53,9 @@ b {
 }
 
 .navItems li:hover a, .links a:hover {
-  color: #7f00ff;
+  color: #86c4dd;
+
+  font-size: 1.4rem;
 }
 
 .links a {

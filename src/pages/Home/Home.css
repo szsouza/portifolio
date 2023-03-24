@@ -16,7 +16,7 @@
   border-radius: 50%;
   left: -12%;
   top: 40%;
-  background: linear-gradient(45deg, #7f00ff, pink);
+  background: linear-gradient(45deg, #BBD4CB, #EDF2F2);
   animation: object1 6s linear infinite;
 }
 .wraper::after {
@@ -27,7 +27,7 @@
   border-radius: 50%;
   left: 35%;
   top: 12%;
-  background: linear-gradient(45deg, #7f00ff, pink);
+  background: linear-gradient(45deg, #BBD4CB, #EDF2F2);
   animation: object2 6s linear infinite;
 }
 @keyframes object1 {
@@ -75,10 +75,10 @@ h1 {
   color: #3d535f;
 }
 
-.multitext {
-  color: #7f00ff;
+.react-typewriter-text {
+  color: #4898b7;
   text-transform: capitalize;
-  font-size: 12px;
+  font-size: 40px;
 }
 
 p {
@@ -107,9 +107,11 @@ button {
   letter-spacing: 2px;
   text-transform: capitalize;
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
 }
 button:hover {
   background-color: #7f00ff;
+  transform: scale(103%);
 }
 
 .img-box {

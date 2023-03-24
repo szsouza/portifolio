@@ -13,11 +13,12 @@ form {
   display: flex;
   font-size: 25px;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
+  background-color: #667c85;
+  align-items: center;
 }
 form label {
-  display: flex;
-  align-items: flex-start;
+  display: block;
 }
 
 form input[type=text], input[type=email], textarea {
@@ -27,6 +28,7 @@ form input[type=text], input[type=email], textarea {
   border-radius: 10px;
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
+  width: 80%;
 }
 
 form button {
@@ -38,6 +40,7 @@ form button {
     border: none;
     cursor: pointer;
     height: 40px;
+    width: 80%;
     justify-content: center;
     align-items: center;
     display: flex;

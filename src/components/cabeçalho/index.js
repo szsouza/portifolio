@@ -5,7 +5,7 @@ const Cabecalho = () => {
   return (
     <nav>
       <div className="logo">
-        folio<b>.</b>
+        portifolio<b>.</b>
       </div>
 
       <ul className="navItems">
