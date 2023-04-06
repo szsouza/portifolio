@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
   padding: 0 10%;
 }
@@ -15,20 +14,30 @@ form {
   flex-direction: column;
   width: 90%;
   background-color: #667c85;
-  align-items: center;
+  padding-top: 1rem;
 }
 form label {
-  display: block;
+  display: flex;
+  margin-left: 10%;
+}
+
+form input, textarea{
+  align-items: center;
+  margin: auto;
 }
 
 form input[type=text], input[type=email], textarea {
   padding: 0.6rem;
   margin-bottom: 1.4rem;
   border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
   width: 80%;
+  transition: all .4s;
+}
+
+form input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border-radius: 10px;
 }
 
 form button {
@@ -44,6 +53,7 @@ form button {
     justify-content: center;
     align-items: center;
     display: flex;
+    margin: 40px auto;
 }
 
 

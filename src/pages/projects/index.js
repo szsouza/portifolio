@@ -5,28 +5,28 @@ const Projects = () => {
   return (
     <div className="Project">
       <div className="card">
-        <span>Nome do projeto</span>
+        <span>todo list</span>
         <button className="btns-projects">link do projeto</button>
         <button className="btns-projects">link do site</button>
       </div>
       <div className="card">
-        <span>Nome do projeto</span>
+        <span>portifolio</span>
         <button className="btns-projects">link do projeto</button>
         <button className="btns-projects">link do site</button>
       </div><div className="card">
-        <span>Nome do projeto</span>
+        <span>weather App</span>
         <button className="btns-projects">link do projeto</button>
         <button className="btns-projects">link do site</button>
       </div><div className="card">
-        <span>Nome do projeto</span>
+        <span>System Login</span>
         <button className="btns-projects">link do projeto</button>
         <button className="btns-projects">link do site</button>
       </div><div className="card">
-        <span>Nome do projeto</span>
+        <span>Encurtador de Link</span>
         <button className="btns-projects">link do projeto</button>
         <button className="btns-projects">link do site</button>
       </div><div className="card">
-        <span>Nome do projeto</span>
+        <span>Calculadora React</span>
         <button className="btns-projects">link do projeto</button>
         <button className="btns-projects">link do site</button>
       </div><div className="card">

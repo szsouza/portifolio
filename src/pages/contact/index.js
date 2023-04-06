@@ -7,9 +7,9 @@ const Contact = () => {
       <h1>Fale Comigo</h1>
       <form action="#" method="GET">
   <label class="label">Name</label>
-    <input class="input" type="text" placeholder="Text input"/>
+    <input class="input" type="text" placeholder="Digite seu nome"/>
   <label class="label">Email</label>
-    <input class="input is-danger" type="email" placeholder="Email input" />
+    <input class="input is-danger" type="email" placeholder="Digite seu email" />
     <label>Mensagem</label>
     <textarea placeholder="deixe sua mensagem"></textarea>
     <button type="submit">Enviar</button>

@@ -30,6 +30,7 @@
   background: linear-gradient(45deg, #BBD4CB, #EDF2F2);
   animation: object2 6s linear infinite;
 }
+
 @keyframes object1 {
   50% {
     left: -13%;
