@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/global.css"
 import "./Home.css"
 import TypingEffect from "../../components/effects/typingEffect";
+import imgagemEscolhida from '../../components/imgs/sem_fundo.png'
 
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
         </div>
         <div className="cols cols1">
           <div className="img-box">
-      
+          <img src={imgagemEscolhida }/>
           </div>
         </div>
       </div>

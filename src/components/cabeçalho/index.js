@@ -21,6 +21,18 @@ const Cabecalho = () => {
         <a href="#" target={"_blank"}><i className="fab fa-instagram"></i></a>
         <a href="https://github.com/szsouza" target={"_blank"}><i className="fab fa-github"></i></a>
       </div>
+
+      <div className="toogle_btn">
+        <i className="fa-solid fa-bars"></i>
+      </div>
+
+      <ul className="dropDown_Items open">
+        <li><a href="">home</a></li>
+        <li><a href="#About">about</a></li>
+        <li><a href="">skils</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact me</a></li>
+      </ul>
     </nav>
   )
 }
