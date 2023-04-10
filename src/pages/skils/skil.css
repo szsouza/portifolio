@@ -1,35 +1,102 @@
 .Skil {
-  padding: 0 10%;
+  padding: 5% 10%;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   justify-content: center;
 }
 
 .Skils {
-  background-color: #667c85;
+  background-color: #C6DAD3;
   width: 100%;
-  height: 120px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   border-radius: 20px;
+  flex-wrap: wrap;
 }
 
 span {
   font-size: 40px;
 }
-.Skils i {
-  font-size: 50px;
+.Skils.i {
   justify-content: space-between;
   display: flex;
+}
+
+.skils_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+  padding: 15px;
   transition: 0.4s;
 }
 
-.Skils i:hover {
+.skils_card span {
+  font-size: 1rem;
+  color: #3D535F;
+  font-weight: 600;
+}
+.skils_card:hover {
   transform: scale(115%);
-  color: #EBB75B;
+}
+
+.skils_card svg {
+  height: 2.5rem;
+}
+
+
+
+/* skils */
+/* hard skils */
+.skils_card svg{
+  fill: #3D535F;
+  transition: 0.4s;
+}
+.skils_card .skilHtml:hover {
+  fill: #E7522B;
+}
+.skils_card .skilCss:hover {
+  fill: #3765F1;
+}
+.skils_card .skilBootstrap:hover {
+  fill: #6E41A4;
+}
+.skils_card .skilJs:hover {
+  fill: #F7E018;
+}
+.skils_card .skilReact:hover {
+  fill: #6EDBFB;
+}
+.skils_card .skilPhp:hover {
+  fill: #9C9FC7;
+}
+/* soft skils  */
+
+.skils_card .skilLigth:hover {
+  fill: #F7E018;
+}
+.skils_card .skilCoop:hover {
+  fill: #563f1b;
+}
+.skils_card .skilClock:hover {
+  fill: #38726C;
+}
+.skils_card .skilChat:hover {
+  fill: #CEEAF7;
+}
+.skils_card .skilPuzzle:hover {
+  fill: rgb(196, 35, 35);
+}
+.skils_card .skilGraduation:hover {
+  fill: #B8C480;
+}
+.skils_card .skilBook:hover {
+  fill: #99e1d9;
 }
 

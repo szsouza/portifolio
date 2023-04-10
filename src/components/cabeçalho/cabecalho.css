@@ -65,29 +65,43 @@ b {
   transition: 0.4s;
 }
 
-.toogle_btn {
+.nav_btn {
   color: #3d535f;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+
+}
+
+.nav_btn svg {
+  transition: .4s;
 }
 /* drop items  */
 
 .dropDown_Items {
  display: none;
+ height: 0;
+ width: 100%;
 }
+
+.dropDown_Items.open{
+  min-height: 100vh;
+ }
 
 .dropDown_Items li {
   list-style: none;
-  margin: 0 15px;
+
 }
 .dropDown_Items li a{
-  font-size: 20px;
-  color: #3d535f;
+  display: flex;
+  height: fit-content;
+  font-size: 1rem;
+  color: #fff;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: capitalize;
-  width: 100%;
+  width: fit-content;
+  transition: 0.4s;
 }
 
 
@@ -106,28 +120,60 @@ b {
 }
 
 @media(max-width: 900px) {
-  .logo, .navItems li a, .links a{
+  .logo, .nav_Bar ul, .navItems li a, .links a{
     display: none;
   }
-
   nav {
+    height: 60px;
+  }
+
+  .nav_Bar.open{
     display: block;
     overflow: visible;
     background-color: #3d535f63;
     backdrop-filter: blur(6px);
     min-height: 100%;
+    line-height: normal;
   }
 
-  .toogle_btn, .dropDown_Items  {
+  .nav_btn {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    right: 10%;
+    position: absolute;
+    margin-top: 20px;
+    padding: 0;
+    background: none;
+    background-color: transparent;
+    box-shadow: none;
   }
-  .toogle_btn i {
-    position: relative;
-    left: 40%;
-    margin-top: 12px;
+
+  .nav_btn:hover {
+    background-color: transparent;
+  }
+  .nav_btn svg:hover {
+    fill: #C8DBD5;
+  }
+  .close-btn {
+    display: none;
+  }
+
+  .dropDown_Items.open{
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .dropDown_Items.open a:hover {
+    color: #00d9ff;
+    font-size: 1.4rem;
   }
   
 }

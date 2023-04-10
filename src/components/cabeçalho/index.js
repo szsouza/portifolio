@@ -1,9 +1,50 @@
-import React from "react";
+// eslint-disable-next-line
+
+import React, { useRef } from "react";
 import "./cabecalho.css"
+import {FaBars, FaTimes} from "react-icons/fa"
+
+const toogleBtnIcon = document.querySelector(".toogle_btn i")
+const dropDownItens = document.querySelector(".dropDown_Items")
+const nav = document.querySelector(".nav_Bar")
+
+// function menu() {
+//   dropDownItens.classList.toggle('open')
+//   nav.classList.toggle('open')
+//   const isOpen = dropDownItens.classList.contains('open')
+
+//   toogleBtnIcon.classList = isOpen
+//   ? 'fa-solid fa-xmark'
+//   : 'fa-solid fa-bars'
+// }
+
 
 const Cabecalho = () => {
+  
+  const navRef = useRef()
+  const listRef = useRef()
+  const btnRef = useRef()
+  const btnCloseRef = useRef()
+  const showNavBar = () => {
+    navRef.current.classList.toggle('open')
+    listRef.current.classList.toggle('open')
+    
+    btnCloseRef.current.classList.remove('close-btn')
+    btnRef.current.classList.toggle('close-btn')
+    
+    
+  }
+
+  const btnToggle = () => {
+    navRef.current.classList.toggle('open')
+    listRef.current.classList.toggle('open')
+
+    btnCloseRef.current.classList.add('close-btn')
+    btnRef.current.classList.toggle('close-btn')
+  }
+
   return (
-    <nav>
+    <nav className="nav_Bar" ref={navRef}>
       <div className="logo">
         portifolio<b>.</b>
       </div>
@@ -22,11 +63,19 @@ const Cabecalho = () => {
         <a href="https://github.com/szsouza" target={"_blank"}><i className="fab fa-github"></i></a>
       </div>
 
-      <div className="toogle_btn">
-        <i className="fa-solid fa-bars"></i>
-      </div>
+      <button className="nav_btn close-btn" ref={btnCloseRef} onClick={btnToggle}>
+        <FaTimes/>
+      </button>
 
-      <ul className="dropDown_Items open">
+      <button className="nav_btn" ref={btnRef} onClick={showNavBar}>
+        <FaBars/>
+      </button>
+      
+
+
+
+
+      <ul className="dropDown_Items" ref={listRef}>
         <li><a href="">home</a></li>
         <li><a href="#About">about</a></li>
         <li><a href="">skils</a></li>
@@ -35,6 +84,12 @@ const Cabecalho = () => {
       </ul>
     </nav>
   )
+  
+  
+
 }
+
+
+
 
 export default Cabecalho

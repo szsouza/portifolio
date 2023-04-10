@@ -82,7 +82,7 @@ p {
 }
 
 .btns {
-  width: 100%;
+  width: fit-content;
   position: relative;
   left: 150px;
 }
@@ -153,5 +153,61 @@ button:hover {
   
   .cols1 {
     display: none;
+  }
+}
+
+@media(max-width: 550px) {
+  .wraper::before {
+    width: 200px;
+    height: 200px;
+  }
+  .wraper::after {
+    width: 100px;
+    height: 100px;
+  }
+  .topline {
+    display: block;
+    position: relative;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: #3d535f;
+  }
+  
+  h1 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #3d535f;
+  }
+  
+  .react-typewriter-text {
+    color: #4898b7;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+  }
+  
+  .btns {
+    width: fit-content;
+    position: relative;
+    left: 100px;
+  }
+  
+  button {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 425px) {
+  .btns {
+    width: fit-content;
+    position: relative;
+    left: 10px;
   }
 }
