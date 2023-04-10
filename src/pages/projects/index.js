@@ -3,7 +3,7 @@ import "./projects.css"
 
 const Projects = () => {
   return (
-    <div className="Project">
+    <div className="Project" id="Projects">
       <div className="card">
         <span>todo list</span>
         <a href="https://github.com/szsouza/todo-list"><button className="btns-projects">link do projeto</button></a>

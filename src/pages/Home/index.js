@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     
-      <div className="wraper">
+      <div className="wraper" id="Home">
         <div className="cols cols0">
           <span className="topline">Hello</span>
           <h1>I'm <span className="multitext" ><TypingEffect/> </span></h1>

@@ -3,7 +3,7 @@ import "./skil.css"
 
 const Skils = () => {
   return (
-    <div className="Skil">
+    <div className="Skil" id="Skils">
       <span>Hard Skils</span>
       <div className="Skils">
       <div class="skils_card">
