@@ -76,11 +76,11 @@ const Cabecalho = () => {
 
 
       <ul className="dropDown_Items" ref={listRef}>
-        <li><a href="">home</a></li>
+      <li><a href="#Home">home</a></li>
         <li><a href="#About">about</a></li>
-        <li><a href="">skils</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact me</a></li>
+        <li><a href="#Skils">skils</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact me</a></li>
       </ul>
     </nav>
   )
