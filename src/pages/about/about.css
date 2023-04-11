@@ -10,6 +10,15 @@
   text-align: justify;
 }
 
+.About p {
+  text-transform: none;
+}
+
+.About p span{
+  color: #4B98B7;
+  font-weight: 700;
+}
+
 
 .about-me {
   text-transform: capitalize;
