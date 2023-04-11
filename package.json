@@ -13,6 +13,7 @@
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "react-typewriter-effect": "^1.1.0",
+    "react-typical": "^0.1.3",
     "style-components": "^0.1.0",
     "styled-components": "^5.3.9",
     "typed.js": "^2.0.132",
