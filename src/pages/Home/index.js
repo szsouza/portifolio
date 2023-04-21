@@ -4,7 +4,6 @@ import "./Home.css"
 import TypingEffect from "../../components/effects/typingEffect";
 import imgagemEscolhida from '../../components/imgs/sem_fundo.png'
 import curriculo from "../../components/curriculo/Curriculo.pdf"
-import { render } from "react-dom";
 
 
 const Home = () => {

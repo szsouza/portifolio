@@ -8,15 +8,6 @@ const toogleBtnIcon = document.querySelector(".toogle_btn i")
 const dropDownItens = document.querySelector(".dropDown_Items")
 const nav = document.querySelector(".nav_Bar")
 
-// function menu() {
-//   dropDownItens.classList.toggle('open')
-//   nav.classList.toggle('open')
-//   const isOpen = dropDownItens.classList.contains('open')
-
-//   toogleBtnIcon.classList = isOpen
-//   ? 'fa-solid fa-xmark'
-//   : 'fa-solid fa-bars'
-// }
 
 
 const Cabecalho = () => {
