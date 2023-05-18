@@ -50,7 +50,7 @@ const Cabecalho = () => {
 
       <div className="links">
         <a href="https://www.linkedin.com/in/rodrigo-souza-44203a1b8/" target={"_blank"}><i className="fab fa-linkedin"></i></a>
-        <a href="#" target={"_blank"}><i className="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/szxsouza/" target={"_blank"}><i className="fab fa-instagram"></i></a>
         <a href="https://github.com/szsouza" target={"_blank"}><i className="fab fa-github"></i></a>
       </div>
 
