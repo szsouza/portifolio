@@ -1,0 +1,213 @@
+
+
+.wraper {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+.wraper::before {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  content: "";
+  border-radius: 50%;
+  left: -12%;
+  top: 40%;
+  background: linear-gradient(45deg, #BBD4CB, #EDF2F2);
+  animation: object1 6s linear infinite;
+}
+.wraper::after {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: "";
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, #BBD4CB, #EDF2F2);
+  animation: object2 6s linear infinite;
+}
+
+@keyframes object1 {
+  50% {
+    left: -13%;
+    top: 41%;
+  }
+}
+@keyframes object2 {
+  50% {
+    left: 35%;
+    top: 10%;
+  }
+}
+
+.cols {
+  width: 40%;
+}
+
+.cols0 {
+  width: 60%;
+  z-index: 5;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+}
+
+h1 {
+  display: block;
+  font-size: 5em;
+  font-weight: 900;
+  color: #3d535f;
+}
+
+.multitext p {
+  color: #4898b7;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+p {
+  display: block;
+  width: 90%;
+  font-size: 1.2em;
+  color: #3d535f;
+}
+
+.btns {
+  width: fit-content;
+  position: relative;
+  left: 150px;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3d535f;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #7f00ff;
+  transform: scale(103%);
+}
+
+.img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img-box img {
+  position: absolute;
+  height: auto;
+  width: 350px;  
+  right: 50px;
+  top: -260px;
+  animation: animateUser 4s linear infinite;
+}
+
+
+@keyframes animateUser {
+  50% {
+    right: 30px;
+    top: -250px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .img-box img {
+    width: 300px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .img-box img {
+    width: 300px;
+  }
+
+  button {
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 900px) {
+  .cols0{
+    width: 100%;
+  }
+  
+  .cols1 {
+    display: none;
+  }
+}
+
+@media(max-width: 550px) {
+  .wraper::before {
+    width: 200px;
+    height: 200px;
+  }
+  .wraper::after {
+    width: 100px;
+    height: 100px;
+  }
+  .topline {
+    display: block;
+    position: relative;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: #3d535f;
+  }
+  
+  h1 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #3d535f;
+  }
+  
+  .react-typewriter-text {
+    color: #4898b7;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+  }
+  
+  .btns {
+    width: fit-content;
+    position: relative;
+    left: 100px;
+  }
+  
+  button {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 425px) {
+  .btns {
+    width: fit-content;
+    position: relative;
+    left: 10px;
+  }
+}
